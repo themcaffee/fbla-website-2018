@@ -3,16 +3,20 @@
     <AppNavbar></AppNavbar>
     <!-- This is where all of our pages will be rendered -->
     <router-view/>
+
+    <AppFooter></AppFooter>
   </div>
 </template>
 
 <script>
-import AppNavbar from './components/AppNavbar'
+import AppNavbar from '@/components/AppNavbar'
+import AppFooter from '@/components/AppFooter'
 
 export default {
   name: 'App',
   components: {
-    AppNavbar
+    AppNavbar,
+    AppFooter
   }
 }
 </script>

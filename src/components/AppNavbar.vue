@@ -9,14 +9,14 @@
 
     <b-navbar-brand href="#">Washed But Not Forgotten</b-navbar-brand>
 
-    <b-collapse is-nav id="nav_collapse">
+    <!-- <b-collapse is-nav id="nav_collapse">
 
       <b-navbar-nav>
         <b-nav-item href="#">Link</b-nav-item>
         <b-nav-item href="#" disabled>Disabled</b-nav-item>
       </b-navbar-nav>
 
-    </b-collapse>
+    </b-collapse> -->
   </b-navbar>
   </div>
 </template>
