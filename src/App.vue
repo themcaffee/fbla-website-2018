@@ -1,23 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <AppNavbar></AppNavbar>
+    <!-- This is where all of our pages will be rendered -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import AppNavbar from './components/AppNavbar'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    AppNavbar
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
