@@ -1,6 +1,6 @@
-# 
+# fbla-website-2018
 
-> 
+> A Vue.js project
 
 ## Build Setup
 
