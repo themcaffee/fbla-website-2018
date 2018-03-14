@@ -12,7 +12,7 @@
 footer {
   background-color: #17a2b8;
   color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 </style>

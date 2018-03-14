@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="row">
+      <!--- TODO photo here -->
       <div class="col-sm-12">
         <h1 class="text-center">Give Potential</h1>
       </div>
@@ -38,6 +39,10 @@
   padding-bottom: 3em;
 }
 #donate-money {
+  padding-bottom: 3em;
+}
+
+#donate-clothes {
   padding-bottom: 3em;
 }
 </style>
