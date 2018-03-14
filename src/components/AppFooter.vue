@@ -2,8 +2,17 @@
   <footer class="fixed-bottom">
     <div class="text-center">
       <i>
-        &copy; 2018 Mitch McAffee and Rahul Ramkumar
+        &copy; 2018 Washed But Not Forgotten
       </i>
     </div>
   </footer>
 </template>
+
+<style>
+footer {
+  background-color: #17a2b8;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+</style>
