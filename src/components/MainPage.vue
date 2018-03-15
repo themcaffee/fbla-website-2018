@@ -13,14 +13,15 @@
         <p class="lead">
           <a href="#donate-money" id="donate-money-btn" class="btn btn-default btn-grey" role="button">Donate Money</a>
           <a href="#donate-clothes" id="donate-clothes-btn" class="btn btn-default btn-grey" role="button">Donate Clothes</a>
+          <a href="#get-clothes" class="btn btn-default btn-grey" role="button">Get Clothes</a>
         </p>
       </div>
     </div>
 
     <div class="container">
       <div id="donate-money" class="pt-5">
-        <h1>Donate Money</h1>
-        <p class="col-sm-6">
+        <h1 class="col-sm-8">Donate Money</h1>
+        <p class="col-sm-8">
           Want to help out but don't have extra clothes? All monetary donations goes directly
           to providing our services. It takes money to rent our locations, provide transporation
           between sites, and make sure all clothes are cleaned thoroughly.
@@ -37,13 +38,15 @@
     </div>
     <div id="donate-clothes">
       <div class="container">
-        <h1>Donate Clothes</h1>
-        <p class="col-sm-6">
-          Have extra clothes? We want them! We have several donation locations
-          that are available to give clothes. Either come to our main location during
-          our business hours or visit one of our 24 hour dropoff locations.
-        </p>
-        <div class="row donate-clothes-info">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Donate Clothes</h1>
+            <p>
+              Have extra clothes? We want them! We have several donation locations
+              that are available to give clothes. Either come to our main location during
+              our business hours or visit one of our 24 hour dropoff locations.
+            </p>
+          </div>
           <div class="text-center col-sm-3">
             <h3>What we accept</h3>
             <ul class="list-unstyled">
@@ -65,7 +68,31 @@
               <li>Damaged clothes</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
 
+    <div id="get-clothes" class="container">
+      <h1 class="col-sm-8">Get Clothes</h1>
+      <p class="col-sm-8">
+        Need clothes? We've got you covered! Our facility offers clothing to those
+        that need them, no questions asked. Just stop by our main facility and
+        you can browse through our collection and take what you need.
+      </p>
+    </div>
+
+    <div id="contact-info">
+      <div class="container mt-5" id="contact-info-container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Contact Us</h1>
+            <p>Questions? Comments? We'd love to hear them!</p>
+            <ul class="list-unstyled">
+              <li><b>Email:</b> contact@washed.mitchmcaffee.com</li>
+              <li><b>Mailing Address:</b> 3324 E Eve St, Sandy, UT 84093</li>
+              <li><b>Phone:</b> (801) 321-1231</li>
+            </ul>
+          </div>
           <div class="col-sm-6">
             <div class="text-center">
               <h3>Locations and Hours</h3>
@@ -84,18 +111,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container mt-5" id="contact-info-container">
-      <div id="contact-info">
-        <h1>Contact Us</h1>
-        <p>Questions? Comments? We'd love to hear them!</p>
-        <ul class="list-unstyled">
-          <li><b>Email:</b> contact@washed.mitchmcaffee.com</li>
-          <li><b>Mailing Address:</b> 3324 E Eve St, Sandy, UT 84093</li>
-          <li><b>Phone:</b> (801) 321-1231</li>
-        </ul>
       </div>
     </div>
   </div>
@@ -123,7 +138,10 @@
     height: 100%;
 }
 #donate-money-btn {
-    margin-right: 20px;
+    margin-right: 10px;
+}
+#donate-clothes-btn {
+  margin-right: 10px;
 }
 #donation-buttons {
     padding-bottom: 3em;
@@ -139,7 +157,7 @@
     padding-bottom: 3em;
 }
 #donate-clothes {
-    min-height: 40%;
+    min-height: 30%;
     padding-top: 2em;
     padding-bottom: 3em;
     background-color: @background_color_1;
@@ -151,11 +169,19 @@
     color: @color_1;
     font-weight: 700;
 }
+#get-clothes {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 #contact-info-container {
     @media @mobile {
         height: 60vh;
     }
     height: 30vh;
+}
+#contact-info {
+  padding-top: 1em;
+  background-color: @background_color_1;
 }
 .jumbotron {
     /* The following image is used from Death To The Stock Photo under the license
