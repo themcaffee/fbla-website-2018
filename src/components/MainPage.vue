@@ -121,6 +121,9 @@
   font-weight: 700;
 }
 .jumbotron {
+  /* The following image is used from Death To The Stock Photo under the license
+     https://deathtothestockphoto.com/wp-content/uploads/2017/12/Death-to-the-Stock-Photo-Content-End-User-License-4-2016.pdf
+     We are not affiliated with Death to the stock photo. */
   background-image: url("../assets/Vibrant_small_inverted.png");
   background-size: cover;
   border-radius: 0px;
