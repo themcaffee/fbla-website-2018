@@ -23,39 +23,18 @@
         <div id="app"></div>
         <!-- built files will be auto injected -->
         <script>
-        var handler = StripeCheckout.configure({
-        key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
-        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-        locale: 'auto',
-        token: function(token) {
-        // You can access the token ID with `token.id`.
-        // Get the token ID to your server-side code for use.
-        }
-        });
-
-        function openPayment(e, amount){
-            handler.open({
-                name: 'Stripe.com',
-                description: '2 widgets',
-                zipCode: true,
-                amount: amount
-            });
-            e.preventDefault();
-        }
-
-        // document.getElementById('creditCardPayButton').addEventListener('click', function(e) {
-        // // Open Checkout with further options:
-        // handler.open({
-        // name: 'Stripe.com',
-        // description: '2 widgets',
-        // zipCode: true,
-        // amount: 2000
-        // });
-        // e.preventDefault();
-        // });
+        window.handler = StripeCheckout.configure({
+          key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+          image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+          locale: 'auto',
+          token: function(token) {
+          // You can access the token ID with `token.id`.
+          // Get the token ID to your server-side code for use.
+          }
+        })
         // Close Checkout on page navigation:
         window.addEventListener('popstate', function() {
-        handler.close();
+        window.handler.close();
         });
         </script>
     </body>

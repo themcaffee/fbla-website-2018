@@ -18,33 +18,34 @@
       </div>
     </div>
     <div class="container">
-      <div id="donate-money" class="pt-5">
+      <div id="donate-money" class="row pt-5">
+        <div class="col-sm-6">
           <h1>Donate Money</h1>
           <p class="col-sm-6 p-0">
               Want to help out but don't have extra clothes? All monetary donations goes directly
               to providing our services. It takes money to rent our locations, provide transporation
               between sites, and make sure all clothes are cleaned thoroughly.
           </p>
-          <div>
-              <h3>Ways to Donate</h3>
-              <ul class="list-unstyled">
-                  <li><a href="https://commerce.coinbase.com/checkout/07a649ff-5fa7-4e3f-aa4a-2f44fbb598ce" class="btn btn-outline-dark donate-option donate-with-crypto">Cryptocurrency</a></li>
-                  <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
-                  <li>
-                      <div>
-                          <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
-                          <b-dropdown-item>$1</b-dropdown-item>
-                          <b-dropdown-item>$5</b-dropdown-item>
-                          <b-dropdown-item>$10</b-dropdown-item>
-                          <b-dropdown-divider></b-dropdown-divider>
-                          <b-dropdown-item>$100</b-dropdown-item>
-                          <b-dropdown-item>$500</b-dropdown-item>
-                          </b-dropdown>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-
+        </div>
+        <div class="offset-sm-2 col-sm-3">
+          <h3>Ways to Donate</h3>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
+            <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
+            <li>
+                <div>
+                    <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
+                    <b-dropdown-item @click="openPayment(100)">$1</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(500)">$5</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(1000)">$10</b-dropdown-item>
+                    <b-dropdown-divider></b-dropdown-divider>
+                    <b-dropdown-item @click="openPayment(10000)">$100</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(50000)">$500</b-dropdown-item>
+                    </b-dropdown>
+                </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -204,3 +205,21 @@
     border-radius: 0px;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    openPayment (amount) {
+      window.handler.open({
+        name: 'Washed But Not Forgotten',
+        description: 'Thank You!',
+        image: '/android-chrome-512x512.png',
+        locale: 'auto',
+        panelLabel: 'Donate {{amount}}',
+        zipCode: true,
+        amount: amount
+      })
+    }
+  }
+}
+</script>
