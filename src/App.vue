@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<style>
+html, body, #app {
+  height: 100%;
+}
+</style>
+
 <script>
 import AppNavbar from '@/components/AppNavbar'
 import AppFooter from '@/components/AppFooter'
