@@ -1,6 +1,6 @@
 <template>
   <div id="main-page">
-    <div class="jumbotron">
+    <div class="jumbotron my-0">
       <h1 class="display-3 header-text">Give Potential</h1>
       <p class="lead header-text">
         Everyone should have clothes. <br>
@@ -15,7 +15,7 @@
       </p>
     </div>
 
-    <div id="donate-money" class="col-sm-12">
+    <div id="donate-money" class="col-sm-12 pt-5">
       <h1 class="text-center">Donate Money</h1>
       <p class="offset-sm-3 col-sm-6 text-center">
         Want to help out but don't have extra clothes? All monetary donations goes directly
@@ -83,6 +83,7 @@
 }
 #main-page {
   height: 100%;
+  background: #e9ecef;
 }
 #donate-money-btn {
   margin-right: 20px;
@@ -91,11 +92,11 @@
   padding-bottom: 3em;
 }
 #donate-money {
+    background: white;
   padding-bottom: 3em;
 }
 
 #donate-clothes {
-  background-color: #e9ecef;
   min-height: 40%;
   padding-top: 2em;
   padding-bottom: 3em;
