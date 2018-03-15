@@ -30,8 +30,8 @@
         <div class="offset-sm-2 col-sm-3">
           <h3>Ways to Donate</h3>
           <ul class="list-unstyled">
-            <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
-            <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
+            <li><a class="btn btn-outline-dark donate-option donate-with-crypto" href="https://commerce.coinbase.com/checkout/97933911-8dc4-49c9-a061-08ece4e3bb2d">Cryptocurrency</a></li>
+            <li><a class="btn btn-outline-dark donate-option" href="https://paypal.me/pools/c/82H4gI9hr5">PayPal</a></li>
             <li>
                 <div>
                     <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
