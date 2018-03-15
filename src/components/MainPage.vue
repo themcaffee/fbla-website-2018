@@ -36,12 +36,12 @@
             <li>
                 <div>
                     <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
-                    <b-dropdown-item>$1</b-dropdown-item>
-                    <b-dropdown-item>$5</b-dropdown-item>
-                    <b-dropdown-item>$10</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(100)">$1</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(500)">$5</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(1000)">$10</b-dropdown-item>
                     <b-dropdown-divider></b-dropdown-divider>
-                    <b-dropdown-item>$100</b-dropdown-item>
-                    <b-dropdown-item>$500</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(10000)">$100</b-dropdown-item>
+                    <b-dropdown-item @click="openPayment(50000)">$500</b-dropdown-item>
                     </b-dropdown>
                 </div>
             </li>
@@ -206,3 +206,21 @@
     border-radius: 0px;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    openPayment (amount) {
+      window.handler.open({
+        name: 'Washed But Not Forgotten',
+        description: 'Thank You!',
+        image: '/android-chrome-512x512.png',
+        locale: 'auto',
+        panelLabel: 'Donate {{amount}}',
+        zipCode: true,
+        amount: amount
+      })
+    }
+  }
+}
+</script>
