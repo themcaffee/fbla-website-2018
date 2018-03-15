@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5" id="contact-info-container">
       <div id="contact-info">
         <h1>Contact Us</h1>
         <p>Questions? Comments? We'd love to hear them!</p>
@@ -93,42 +93,61 @@
   </div>
 </template>
 
-<style>
+<style lang="less">
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+@color_1: yellow;
+@background_color_1: #e9ecef;
+
 .btn-grey {
-  background-color: #e9ecef;
+    background-color: @background_color_1;
 }
 #main-page {
-  height: 100%;
+    height: 100%;
 }
 #donate-money-btn {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 #donation-buttons {
-  padding-bottom: 3em;
+    padding-bottom: 3em;
 }
 #donate-money {
-  padding-bottom: 3em;
+    padding-bottom: 3em;
 }
-
 #donate-clothes {
-  min-height: 40%;
-  padding-top: 2em;
-  padding-bottom: 3em;
-  background-color: #e9ecef;
+    min-height: 40%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    background-color: @background_color_1;
 }
 #main-locations {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 .header-text {
-  color: yellow;
-  font-weight: 700;
+    color: @color_1;
+    font-weight: 700;
+}
+#contact-info-container {
+    @media @mobile {
+        height: 60vh;
+    }
+    height: 30vh;
 }
 .jumbotron {
-  /* The following image is used from Death To The Stock Photo under the license
+    /* The following image is used from Death To The Stock Photo under the license
      https://deathtothestockphoto.com/wp-content/uploads/2017/12/Death-to-the-Stock-Photo-Content-End-User-License-4-2016.pdf
      We are not affiliated with Death to the stock photo. */
-  background-image: url("../assets/Vibrant_small_inverted.png");
-  background-size: cover;
-  border-radius: 0px;
+    background-image: url("../assets/Vibrant_small_inverted.png");
+    background-size: cover;
+    border-radius: 0px;
 }
 </style>

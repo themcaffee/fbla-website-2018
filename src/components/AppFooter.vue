@@ -8,7 +8,7 @@
         </small>
       </i>
       <form class="form-inline m-auto">
-          <input class="form-control email-signup mx-3" name="email" type="email" placeholder="Sign up for email updates">
+          <input class="form-control email-signup mx-3" name="email" type="email" placeholder="Email Updates">
           <button type="submit" class="btn btn-outline-dark my-auto">Signup</button>
         </form>
     </div>
@@ -35,8 +35,9 @@ footer {
   max-width: 40px;
 }
 .email-signup {
-  font-size: 0.8rem;
-  min-width: 250px;
+  font-size: 0.7rem;
+  width: 50vw;
+  max-width: 250px;
 }
 .pallete-blue {
   background: #C5D1EB;
