@@ -10,8 +10,8 @@
         <hr>
       </div>
       <p class="lead">
-        <button href="#donate-money" id="donate-money-btn" class="btn btn-default">Donate Money</button>
-        <button href="#donate-clothes" id="donate-clothes-btn" class="btn btn-default">Donate Clothes</button>
+        <a href="#donate-money" id="donate-money-btn" class="btn btn-default btn-grey" role="button">Donate Money</a>
+        <a href="#donate-clothes" id="donate-clothes-btn" class="btn btn-default btn-grey" role="button">Donate Clothes</a>
       </p>
     </div>
 
@@ -24,22 +24,47 @@
       </p>
     </div>
 
-    <div id="donate-clothes" class="col-sm-12 text-center">
-      <h1>Donate Clothes</h1>
-      <p>
+    <div id="donate-clothes" class="col-sm-12">
+      <h1 class="text-center">Donate Clothes</h1>
+      <p class="text-center">
         Have extra clothes? We want them! We have several donation locations
         that are available to give clothes.
       </p>
+      <div class="row text-center">
+        <div class="offset-sm-3 col-sm-3">
+          <h3><u>What we accept</u></h3>
+          <ul class="list-unstyled">
+            <li>T-Shirts</li>
+            <li>Pants (Jeans, sweatpants, etc.)</li>
+            <li>Hats</li>
+            <li>Shoes</li>
+            <li>Coats</li>
+            <li>Unopened socks</li>
+            <li>Unopened underwear</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3><u>What we don't accept</u></h3>
+          <ul class="list-unstyled">
+            <li>Used socks</li>
+            <li>Used underwear</li>
+            <li>Damaged clothes</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
+.btn-grey {
+  background-color: #e9ecef;
+}
 #main-page {
   height: 100%;
 }
 #donate-money-btn {
-  padding-right: 10px;
+  margin-right: 20px;
 }
 #donation-buttons {
   padding-bottom: 3em;
