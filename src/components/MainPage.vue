@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main-page">
     <div class="jumbotron">
       <h1 class="display-3 header-text">Give Potential</h1>
       <p class="lead header-text">
@@ -35,6 +35,9 @@
 </template>
 
 <style>
+#main-page {
+  height: 100%;
+}
 #donate-money-btn {
   padding-right: 10px;
 }
@@ -47,7 +50,8 @@
 
 #donate-clothes {
   background-color: #e9ecef;
-  height: 100%;
+  min-height: 40%;
+  padding-top: 2em;
 }
 .header-text {
   color: yellow;
