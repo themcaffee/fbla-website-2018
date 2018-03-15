@@ -31,25 +31,7 @@
         that are available to give clothes. Either come to our main location during
         our business hours or visit one of our 24 hour dropoff locations.
       </p>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="text-center">
-            <h3>Locations and Hours</h3>
-            <div id="main-locations">
-              <b>Main Location:</b><br>
-              3324 E Eve St, Sandy, UT 84093<br>
-              Hours: 9:00 AM - 6:00 PM
-            </div>
-            <div id="dropoff-locations">
-              <b>24 Hour Dropoff Locations:</b>
-              <ul class="list-unstyled">
-                <li>242 E Saint Way, Salt Lake City, UT 84106</li>
-                <li>2134 E Drake St, West Valley City, UT 84203</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+      <div class="row donate-clothes-info">
         <div class="text-center col-sm-3">
           <h3>What we accept</h3>
           <ul class="list-unstyled">
@@ -71,8 +53,26 @@
             <li>Damaged clothes</li>
           </ul>
         </div>
-      </div>
 
+        <div class="col-sm-6">
+          <div class="text-center">
+            <h3>Locations and Hours</h3>
+            <div id="main-locations">
+              <b>Main Location:</b><br>
+              3324 E Eve St, Sandy, UT 84093<br>
+              Hours: 9:00 AM - 6:00 PM
+            </div>
+            <div id="dropoff-locations">
+              <b>24 Hour Dropoff Locations:</b>
+              <ul class="list-unstyled">
+                <li>242 E Saint Way, Salt Lake City, UT 84106</li>
+                <li>2134 E Drake St, West Valley City, UT 84203</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -102,6 +102,9 @@
 }
 #main-locations {
   padding-bottom: 10px;
+}
+.donate-clothes-info {
+  padding-top: 1em;
 }
 .header-text {
   color: yellow;
