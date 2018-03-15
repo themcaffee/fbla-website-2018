@@ -11,17 +11,16 @@
           <hr>
         </div>
         <p class="lead">
-          <a href="#donate-money" id="donate-money-btn" class="btn btn-default btn-grey" role="button">Donate Money</a>
-          <a href="#donate-clothes" id="donate-clothes-btn" class="btn btn-default btn-grey" role="button">Donate Clothes</a>
-          <a href="#get-clothes" class="btn btn-default btn-grey" role="button">Get Clothes</a>
+          <a href="#donate-money" id="donate-money-btn" class="btn btn-light m-1" role="button">Donate Money</a>
+          <a href="#donate-clothes" id="donate-clothes-btn" class="btn btn-light m-1" role="button">Donate Clothes</a>
+          <a href="#get-clothes" class="btn btn-light m-1" role="button">Get Clothes</a>
         </p>
       </div>
     </div>
-
     <div class="container">
       <div id="donate-money" class="pt-5">
           <h1>Donate Money</h1>
-          <p class="col-sm-6">
+          <p class="col-sm-6 p-0">
               Want to help out but don't have extra clothes? All monetary donations goes directly
               to providing our services. It takes money to rent our locations, provide transporation
               between sites, and make sure all clothes are cleaned thoroughly.
@@ -29,7 +28,7 @@
           <div>
               <h3>Ways to Donate</h3>
               <ul class="list-unstyled">
-                  <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
+                  <li><a href="https://commerce.coinbase.com/checkout/07a649ff-5fa7-4e3f-aa4a-2f44fbb598ce" class="btn btn-outline-dark donate-option donate-with-crypto">Cryptocurrency</a></li>
                   <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
                   <li>
                       <div>
@@ -61,7 +60,7 @@
             </p>
           </div>
           <div class="text-center col-sm-3">
-            <h3>What we accept</h3>
+            <h3>Acceptable</h3>
             <ul class="list-unstyled">
               <li>T-Shirts</li>
               <li>Pants (Jeans, sweatpants, etc.)</li>
@@ -74,7 +73,7 @@
           </div>
 
           <div class="text-center col-sm-3">
-            <h3>What we don't accept</h3>
+            <h3>Unacceptable</h3>
             <ul class="list-unstyled">
               <li>Used socks</li>
               <li>Used underwear</li>
@@ -86,8 +85,8 @@
     </div>
 
     <div id="get-clothes" class="container">
-      <h1 class="col-sm-8">Get Clothes</h1>
-      <p class="col-sm-8">
+      <h1 class="col-sm-8 p-0">Get Clothes</h1>
+      <p class="col-sm-8 p-0">
         Need clothes? We've got you covered! Our facility offers clothing to those
         that need them, no questions asked. Just stop by our main facility and
         you can browse through our collection and take what you need.
@@ -107,7 +106,7 @@
             </ul>
           </div>
           <div class="col-sm-6">
-            <div class="text-center">
+            <div class="text-right">
               <h3>Locations and Hours</h3>
               <div id="main-locations">
                 <b>Main Location:</b><br>
@@ -188,7 +187,7 @@
 }
 #contact-info-container {
     @media @mobile {
-        height: 60vh;
+        height: 80vh;
     }
     height: 30vh;
 }
