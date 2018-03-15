@@ -4,7 +4,7 @@
       <div class="row text-center w-100">
       <i class="m-auto">
         <small>
-          <a class="footer-link" href="/privacy-policy">Privacy Policy</a> | &copy; 2018 Washed But Not Forgotten
+          <router-link class="footer-link" :to="{name: 'PrivacyPolicy'}">Privacy Policy</router-link> | &copy; 2018 Washed But Not Forgotten
         </small>
       </i>
       <form class="form-inline m-auto">
