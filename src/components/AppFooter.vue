@@ -2,7 +2,9 @@
   <footer class="fixed-bottom">
     <div class="text-center">
       <i>
-        &copy; 2018 Washed But Not Forgotten
+        <small>
+          &copy; 2018 Washed But Not Forgotten
+        </small>
       </i>
     </div>
   </footer>
