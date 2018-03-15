@@ -71,7 +71,16 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <div id="contact-info" class="text-center">
+        <h2>Contact Us</h2>
+        <p>Questions? Comments? We'd love to hear them!</p>
+        <ul class="list-unstyled">
+          <li><b>Email:</b> contact@washed.mitchmcaffee.com</li>
+          <li><b>Mailing Address:</b> 3324 E Eve St, Sandy, UT 84093</li>
+          <li><b>Phone:</b> (801) 321-1231</li>
+        </ul>
       </div>
     </div>
   </div>
