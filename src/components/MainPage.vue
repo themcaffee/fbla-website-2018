@@ -25,6 +25,14 @@
           to providing our services. It takes money to rent our locations, provide transporation
           between sites, and make sure all clothes are cleaned thoroughly.
         </p>
+        <div>
+            <h3>Ways to Donate</h3>
+            <ul class="list-unstyled">
+                <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
+                <li><a class="btn btn-outline-dark donate-option">Credit Card</a></li>
+                <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
+            </ul>
+        </div>
       </div>
     </div>
     <div id="donate-clothes">
@@ -119,6 +127,13 @@
 }
 #donation-buttons {
     padding-bottom: 3em;
+}
+.donate-option {
+    width: 200px;
+    margin: 10px 0;
+    &:hover {
+        color: white !important;
+    }
 }
 #donate-money {
     padding-bottom: 3em;
