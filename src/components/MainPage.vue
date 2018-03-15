@@ -19,33 +19,34 @@
     </div>
 
     <div class="container">
-      <div id="donate-money" class="pt-5">
+      <div id="donate-money" class="row pt-5">
+        <div class="col-sm-6">
           <h1>Donate Money</h1>
-          <p class="col-sm-6">
+          <p>
               Want to help out but don't have extra clothes? All monetary donations goes directly
               to providing our services. It takes money to rent our locations, provide transporation
               between sites, and make sure all clothes are cleaned thoroughly.
           </p>
-          <div>
-              <h3>Ways to Donate</h3>
-              <ul class="list-unstyled">
-                  <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
-                  <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
-                  <li>
-                      <div>
-                          <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
-                          <b-dropdown-item>$1</b-dropdown-item>
-                          <b-dropdown-item>$5</b-dropdown-item>
-                          <b-dropdown-item>$10</b-dropdown-item>
-                          <b-dropdown-divider></b-dropdown-divider>
-                          <b-dropdown-item>$100</b-dropdown-item>
-                          <b-dropdown-item>$500</b-dropdown-item>
-                          </b-dropdown>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-
+        </div>
+        <div class="offset-sm-2 col-sm-3">
+          <h3>Ways to Donate</h3>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-dark donate-option">Cryptocurrency</a></li>
+            <li><a class="btn btn-outline-dark donate-option">PayPal</a></li>
+            <li>
+                <div>
+                    <b-dropdown id="ddown1" text="Credit Card" toggle-class="btn-outline-dark donate-option">
+                    <b-dropdown-item>$1</b-dropdown-item>
+                    <b-dropdown-item>$5</b-dropdown-item>
+                    <b-dropdown-item>$10</b-dropdown-item>
+                    <b-dropdown-divider></b-dropdown-divider>
+                    <b-dropdown-item>$100</b-dropdown-item>
+                    <b-dropdown-item>$500</b-dropdown-item>
+                    </b-dropdown>
+                </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
